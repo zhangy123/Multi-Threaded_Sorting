@@ -29,15 +29,15 @@ int main (int argc, const char * argv[])
 	pthread_t workers[NUMBER_OF_THREADS];
 	
 	/* establish the first sorting thread */
-	//1. call malloc to allocate a “parameters”
-	//2. use “parameters” to specify the first half of the array
-      //3. create the first thread
+	//1. call malloc to allocate a â€œparametersâ€
+	//2. use â€œparametersâ€ to specify the first half of the array
+        //3. create the first thread
 	
 
 	/* establish the second sorting thread */
-	//1. call malloc to allocate a “parameters”
-	//2. use “parameters” to specify the second half of the array
-      //3. create the second thread
+	//1. call malloc to allocate a â€œparametersâ€
+	//2. use â€œparametersâ€ to specify the second half of the array
+        //3. create the second thread
   
 	
 	/* now wait for the 2 sorting threads to finish */
@@ -45,7 +45,7 @@ int main (int argc, const char * argv[])
 	
 
 	/* establish the merge thread */
-	//use “parameters” to hold the beginning index in each half
+	//use â€œparametersâ€ to hold the beginning index in each half
 	//create the third thread: merge 
 	
 	
@@ -84,8 +84,8 @@ void *merger(void *params)
 {
 	parameters* p = (parameters *)params;
 	
-	//reuse “parameters” to hold the first index in each half
-	//merge two sorted sublist to the arry result
+	//reuse â€œparametersâ€ to hold the first index in each half
+	//merge two sorted sublist to the array result
 	
 	pthread_exit(0);
 }
